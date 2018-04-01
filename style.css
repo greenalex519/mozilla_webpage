@@ -1,4 +1,5 @@
 /* || General setup */
+
 html, body {
   margin: 0;
   padding: 0;
@@ -49,7 +50,7 @@ p, li {
 
 /* || header layout */
 
-header {
+.header {
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -60,43 +61,42 @@ body > * {
   padding: 1%;
 }
 
-main, header, nav, article, aside, footer, section {
+.main, .header, .nav, .article, .aside, footer, .section {
   background-color: rgba(0,255,0,0.5);
   padding: 1%;
 }
 
 h1 {
   flex: 5;
-  align-self: center;
   text-transform: uppercase;
 }
 
-header img {
+.header img {
   display: block;
   height: 60px;
   padding-top: 20.15px;
 }
 
-nav {
+.nav {
   height: 50px;
   flex: 100%;
   display: flex;
 }
 
-nav ul {
+.nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-nav li {
+.nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-nav a, nav span {
+.nav a, .nav span {
   display: inline-block;
   font-size: 2rem;
   height: 3rem;
@@ -108,30 +108,9 @@ nav a, nav span {
 }
 
 /* || main layout */
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.nav {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.dove {
-  width: 20%;
-  height: 20%;
-
-}
-
 
 .main {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 
 .article {
